@@ -1,0 +1,30 @@
+/*navbar*/
+.navbar {
+    background-color: #e7ded0; 
+}
+.navbar-brand {
+    color: #800000;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.navbar-nav .nav-link {
+    color: #800000; 
+}
+.navbar-nav .nav-link:hover {
+    color: #b30000; 
+}
+.navbar-nav .nav-item a img {
+    width: 24px;
+    height: 24px;
+}
+.dropdown-menu {
+    background-color: #e7ded0; 
+}
+.dropdown-item {
+    color: #800000; 
+}
+.dropdown-item:hover {
+    background-color: #b30000;
+    color: white;
+}

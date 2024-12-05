@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #F0C1E1;
+            font-family: 'Arial', sans-serif;
+        }
+        .category-header {
+            background: linear-gradient(135deg, #F0C1E1 0%, #FF69B4 100%);
+        }
+        .product-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-[#F0C1E1]">
+    <!-- Accessories Page -->
+    <div id="accessories" class="min-h-screen">
+        <header class="category-header text-white py-12 text-center">
+            <h1 class="text-4xl font-bold mb-4">Accessories Collection</h1>
+            <p class="text-xl opacity-80">Elegance in every detail</p>
+        </header>
+
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Accessories Product 1 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Hair+Clip" alt="Hair Clip" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Delicate Hair Clip</h3>
+                    <p class="text-gray-600 mb-4">Elegant pearl-studded hair accessory</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$24.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Accessories Product 2 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Headband" alt="Headband" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Silk Headband</h3>
+                    <p class="text-gray-600 mb-4">Luxurious silk accessory with knot detail</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$34.50</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Accessories Product 3 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Earrings" alt="Earrings" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Crystal Drop Earrings</h3>
+                    <p class="text-gray-600 mb-4">Sparkling evening accessory</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$49.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Makeup Page -->
+    <div id="makeup" class="min-h-screen">
+        <header class="category-header text-white py-12 text-center">
+            <h1 class="text-4xl font-bold mb-4">Makeup Collection</h1>
+            <p class="text-xl opacity-80">Express your inner beauty</p>
+        </header>
+
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Makeup Product 1 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Foundation" alt="Foundation" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Silk Matte Foundation</h3>
+                    <p class="text-gray-600 mb-4">Long-lasting, natural finish</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$42.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Makeup Product 2 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Lipstick" alt="Lipstick" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Velvet Matte Lipstick</h3>
+                    <p class="text-gray-600 mb-4">Intense color, smooth application</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$29.50</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Makeup Product 3 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Eyeshadow" alt="Eyeshadow" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Shimmer Eyeshadow Palette</h3>
+                    <p class="text-gray-600 mb-4">10 versatile, blendable shades</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$54.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skincare Page -->
+    <div id="skincare" class="min-h-screen">
+        <header class="category-header text-white py-12 text-center">
+            <h1 class="text-4xl font-bold mb-4">Skincare Collection</h1>
+            <p class="text-xl opacity-80">Nourish, protect, glow</p>
+        </header>
+
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Skincare Product 1 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Serum" alt="Serum" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Hydrating Face Serum</h3>
+                    <p class="text-gray-600 mb-4">Intense moisture for radiant skin</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$65.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Skincare Product 2 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Moisturizer" alt="Moisturizer" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Daily Glow Moisturizer</h3>
+                    <p class="text-gray-600 mb-4">SPF 30 protection and hydration</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$49.50</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Skincare Product 3 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Mask" alt="Face Mask" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Renewal Face Mask</h3>
+                    <p class="text-gray-600 mb-4">Exfoliating and rejuvenating treatment</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$39.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Outfits Page -->
+    <div id="outfits" class="min-h-screen">
+        <header class="category-header text-white py-12 text-center">
+            <h1 class="text-4xl font-bold mb-4">Fashion Collection</h1>
+            <p class="text-xl opacity-80">Style that speaks volumes</p>
+        </header>
+
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Outfit Product 1 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Summer+Dress" alt="Summer Dress" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Floral Summer Dress</h3>
+                    <p class="text-gray-600 mb-4">Lightweight, elegant summer look</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$89.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Outfit Product 2 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Blazer" alt="Blazer" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Pastel Pink Blazer</h3>
+                    <p class="text-gray-600 mb-4">Chic and professional ensemble</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$129.50</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Outfit Product 3 -->
+                <div class="product-card bg-white rounded-2xl p-6 text-center">
+                    <img src="https://via.placeholder.com/300x300?text=Jumpsuit" alt="Jumpsuit" class="w-full h-64 object-cover rounded-xl mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Elegant Jumpsuit</h3>
+                    <p class="text-gray-600 mb-4">Perfect for evening events</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-[#F0C1E1]">$159.99</span>
+                        <button class="bg-[#F0C1E1] text-white px-4 py-2 rounded-full hover:bg-opacity-90">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
