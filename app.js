@@ -24,6 +24,10 @@ var app = angular
 				.when('/login', {
 					templateUrl:
 						'pages/login/login.html',
+				})
+				.when('/profile', {
+					templateUrl:
+						'pages/profile/profile.html',
 				});
 		},
 	]);

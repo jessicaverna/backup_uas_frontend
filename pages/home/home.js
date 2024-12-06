@@ -43,5 +43,12 @@ angular
 				$scope.isSignedIn = false;
 				window.location.reload();
 			};
+			$scope.redirectToHome =
+				function () {
+					window.location.href = '#';
+					setTimeout(() => {
+						window.location.reload();
+					}, 0);
+				};
 		}
 	);
