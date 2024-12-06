@@ -5,6 +5,8 @@ angular
 		function ($scope) {
 			$scope.products = [];
 			$scope.isLoading = true;
+			$scope.isModalOpen = false;
+			$scope.selectedProduct = {};
 
 			fetch(
 				'https://fakestoreapi.com/products'
@@ -28,6 +30,18 @@ angular
 					$scope.isLoading = false;
 					$scope.$apply();
 				});
+
+			$scope.openDetails = function (
+				product
+			) {
+				$scope.selectedProduct =
+					product;
+				$scope.isModalOpen = true;
+			};
+
+			$scope.closeModal = function () {
+				$scope.isModalOpen = false;
+			};
 		}
 	)
 	.controller(

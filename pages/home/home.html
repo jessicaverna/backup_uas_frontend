@@ -719,7 +719,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section
 		class="bg-white dark:bg-gray-900"
 	>
@@ -785,14 +784,52 @@
 						>
 							${{product.price}}
 						</span>
-						<a
-							href="#"
+						<button
+							ng-click="openDetails(product)"
 							class="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
 						>
-							Add to cart
-						</a>
+							Details
+						</button>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div
+			class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+			ng-show="isModalOpen"
+		>
+			<div
+				class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 dark:bg-gray-800"
+			>
+				<h2
+					class="text-2xl font-bold mb-4 text-gray-900 dark:text-white"
+				>
+					{{selectedProduct.title}}
+				</h2>
+				<img
+					class="rounded-md mb-4 w-full object-cover max-w-40"
+					ng-src="{{selectedProduct.image}}"
+					alt="{{selectedProduct.title}}"
+				/>
+				<p
+					class="mb-4 text-gray-700 dark:text-gray-300"
+				>
+					${{selectedProduct.price}}
+				</p>
+				<p
+					class="mb-4 text-gray-700 dark:text-gray-300 text-justify"
+				>
+					{{selectedProduct.description
+					|| 'No description
+					available.'}}
+				</p>
+				<button
+					ng-click="closeModal()"
+					class="w-full bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 focus:ring-4 focus:ring-red-300"
+				>
+					Close
+				</button>
 			</div>
 		</div>
 	</section>
