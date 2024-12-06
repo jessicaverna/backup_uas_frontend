@@ -29,4 +29,19 @@ angular
 					$scope.$apply();
 				});
 		}
+	)
+	.controller(
+		'NavController',
+		function ($scope) {
+			$scope.isSignedIn =
+				!!localStorage.getItem('token');
+
+			$scope.signOut = function () {
+				localStorage.removeItem(
+					'token'
+				);
+				$scope.isSignedIn = false;
+				window.location.reload();
+			};
+		}
 	);
